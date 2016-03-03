@@ -1,0 +1,23 @@
+#timetable{
+ height:10%;
+ width:100%;
+ background-color:blue;
+ float:left
+}
+
+.droppable { 
+ width: 7em; 
+ height: 3em; 
+ padding: 0.5em; 
+ float: left; 
+ margin: 10px;
+ background-color:#D2D7D3;}
+
+.draggable {
+ width: 7em; 
+ height: 3em; 
+ padding: 0.5em; 
+ float: right;  
+ background-color:#ECF0F1;
+}
+
