@@ -1,23 +1,36 @@
 #timetable{
- height:10%;
- width:100%;
- background-color:blue;
- float:left
+ height:100%;
+ width:41%;
+ background-color:#446CB3;
+ margin:0 auto;
+ margin-top:20em;
+ overflow:hidden;
 }
 
+
 .droppable { 
- width: 7em; 
- height: 3em; 
- padding: 0.5em; 
- float: left; 
- margin: 10px;
+ width: 100%; 
+ height: 4em; 
+ border-style:solid;
+ border-top:black;
+ float:left; 
  background-color:#D2D7D3;}
 
 .draggable {
- width: 7em; 
+ width: 40%; 
  height: 3em; 
  padding: 0.5em; 
  float: right;  
  background-color:#ECF0F1;
 }
 
+body{
+    background-color:#6C7A89;
+}
+
+#head{
+ height:10%;
+ width:100%;
+ background-color:#81CFE0;
+ text-align:center;
+}
