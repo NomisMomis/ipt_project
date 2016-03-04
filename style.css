@@ -1,3 +1,39 @@
+/*Main page */
+ body{
+    background-color:#6C7A89;
+ }
+
+ #header{
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index:2;
+ }
+ 
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ li{
+ float:left;
+}
+
+ li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+ }
+ 
+ li a:hover{
+  background-color:#4B77BE;
+ }
+
+/*personalised timetable*/
 #timetable{
  height:100%;
  width:41%;
@@ -22,13 +58,11 @@
  padding: 0.5em; 
  float: right;  
  background-color:#ECF0F1;
+ z-index:1;
 }
 
-body{
-    background-color:#6C7A89;
-}
 
-#head{
+#timeHead{
  height:10%;
  width:100%;
  background-color:#81CFE0;
