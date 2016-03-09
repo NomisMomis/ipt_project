@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Vanilla javascript plugin for building nice responsive timetables">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timetable.js demo</title>
+    
+    <link rel="stylesheet" href="styles/timetablejs.css">
+    <link rel="stylesheet" href="styles/demo.css">
+  </head>
+  <body>
+
+
+    <h1> LOGO PLACEHOLDER </h1>
+	
+	<button type="button" id="randomiser"> Random show generator </button>
+	<button type="button" id="PersonalisedTT"> Personalised Timetable </button>
+    <div class="timetable"></div>
+    
+    <script src="scripts/timetable.min.js"></script>
+
+    <script>
+      var timetable = new Timetable();
+
+      timetable.setScope(9,6)
+
+      timetable.addLocations(['RTE1', 'RTE2', 'TV3', 'Sky1', 'BBC']);
+
+      timetable.addEvent('Masterchef', 'RTE1', new Date(2015,7,17,09,00), new Date(2015,7,17,10,55), '#');
+	  timetable.addEvent('The Bill', 'RTE1', new Date(2015,7,17,10,55), new Date(2015,7,17,11,30), '#');
+	  timetable.addEvent('Katherines Italian Kitchen', 'RTE1', new Date(2015,7,17,11,30), new Date(2015,7,17,12,00), '#');
+	  timetable.addEvent('Mayday', 'RTE1', new Date(2015,7,17,12,00), new Date(2015,7,17,12,55), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,12,55), new Date(2015,7,17,13,05), '#');
+	  timetable.addEvent('Thats Entertainment', 'RTE1', new Date(2015,7,17,13,05), new Date(2015,7,17,15,10), '#');
+	  timetable.addEvent('Room to improve', 'RTE1', new Date(2015,7,17,15,10), new Date(2015,7,17,16,15), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,16,15), new Date(2015,7,17,16,25), '#');
+	  timetable.addEvent('The Voice of Ireland', 'RTE1', new Date(2015,7,17,16,25), new Date(2015,7,17,18,00), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,18,01), new Date(2015,7,17,18,35), '#');
+	  timetable.addEvent('The Crood', 'RTE1', new Date(2015,7,17,18,35), new Date(2015,7,17,20,25), '#');
+	  timetable.addEvent('Winning Streak', 'RTE1', new Date(2015,7,17,20,25), new Date(2015,7,17,21,25), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,21,25), new Date(2015,7,17,21,55), '#');
+	  timetable.addEvent('The Ray Darcy Show', 'RTE1', new Date(2015,7,17,21,55), new Date(2015,7,17,23,15), '#');
+	  
+	  
+	  
+      timetable.addEvent('Zumba', 'RTE2', new Date(2015,7,17,12), new Date(2015,7,17,13), '#');
+      timetable.addEvent('Zumbu', 'RTE2', new Date(2015,7,17,13,30), new Date(2015,7,17,15), '#');
+	  
+      timetable.addEvent('Lasergaming', 'TV3', new Date(2015,7,17,17,45), new Date(2015,7,17,19,30), '#');
+	  
+      timetable.addEvent('All-you-can-eat grill', 'Sky1', new Date(2015,7,17,21), new Date(2015,7,18,1,30), '#');
+	  
+      timetable.addEvent('Hackathon', 'BBC', new Date(2015,7,17,11,30), new Date(2015,7,17,20)); 
+	  
+    
+
+      var renderer = new Timetable.Renderer(timetable);
+      renderer.draw('.timetable');
+    </script>
+
+</body>
+</html>
