@@ -5,7 +5,8 @@
     <meta name="description" content="Vanilla javascript plugin for building nice responsive timetables">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timetable.js demo</title>
-    
+             <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" href="styles/timetablejs.css">
     <link rel="stylesheet" href="styles/demo.css">
   </head>
@@ -145,11 +146,20 @@
 
     <button type="button" id="Friday"> Friday </button>
 	<button type="button" id="Saturday"> Saturday </button>
+	<br>
+	<div id="personal"></div>
 	
 		<script type="text/javascript">
     document.getElementById("Saturday").onclick = function () {
         location.href = "day2.html";
     };
+    
+    $(document).ready(function(){
+      $("#PersonalisedTT").click(function(){
+          $("#personal").load("../../timetable.html")
+      })  
+        
+    });
 </script>
 </body>
 </html>
