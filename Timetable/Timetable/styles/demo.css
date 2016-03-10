@@ -6,7 +6,13 @@ body
 	font-size:15px
 }
 
-
+#img
+{
+	
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 a
 {
 	text-decoration:none;
