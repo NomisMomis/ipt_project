@@ -2,6 +2,7 @@
  body
 {
 	background:#fcfcfc;
+	background-color: #EFFBF2;
 	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 	color:#333;
 	font-size:15px
@@ -29,10 +30,11 @@ a
 
 #randomiser
 {
-	background-color:#00FF00;
+	background-color:#6496c8;
 	color:#fff;
+	text-shadow: -2px 2px #346392;
 	font-weight: bold;
-	font-size:14px;
+	font-size:20px;
 	margin-left:25px;
 	margin-top:40px;
 	margin-bottom: 100px;
@@ -41,10 +43,11 @@ a
 
 #PersonalisedTT
 {
-	background-color:#00FF00;
+	background-color:#6496c8;
 	color:#fff;
+	text-shadow: -2px 2px #346392;
 	font-weight: bold;
-	font-size:14px;
+	font-size:20px;
 	margin-right:40px;
 	margin-top:40px;
 	margin-bottom: 100px;
@@ -383,3 +386,30 @@ h1
 	
 	float:right;
 }
+
+
+
+
+
+#Friday
+
+{
+ 	background-color:#D8D8D8;
+	color:#333;
+	font-weight: bold;
+	font-size:18px;
+
+	
+	
+}
+
+	#Saturday
+	{
+	
+	background-color:#D8D8D8;
+	color:#333;
+	font-weight: bold;
+	font-size:18px;
+
+	
+	}
