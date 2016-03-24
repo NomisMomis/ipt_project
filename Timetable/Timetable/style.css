@@ -1,14 +1,8 @@
 /*Main page */
-<<<<<<< HEAD
-body
-{
-	background:#6C7A89;
-=======
  body
 {
 	background:#fcfcfc;
 	background-color: #EFFBF2;
->>>>>>> 0c40104e47357395e18aa8563a587e7f73b4e3c5
 	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 	color:#333;
 	font-size:15px
@@ -36,18 +30,11 @@ a
 
 #randomiser
 {
-<<<<<<< HEAD
-	background-color:#446CB3;
-	color:#fff;
-	font-weight: bold;
-	font-size:14px;
-=======
 	background-color:#6496c8;
 	color:#fff;
 	text-shadow: -2px 2px #346392;
 	font-weight: bold;
 	font-size:20px;
->>>>>>> 0c40104e47357395e18aa8563a587e7f73b4e3c5
 	margin-left:25px;
 	margin-top:40px;
 	margin-bottom: 100px;
@@ -56,18 +43,11 @@ a
 
 #PersonalisedTT
 {
-<<<<<<< HEAD
-	background-color:#446CB3;
-	color:#fff;
-	font-weight: bold;
-	font-size:14px;
-=======
 	background-color:#6496c8;
 	color:#fff;
 	text-shadow: -2px 2px #346392;
 	font-weight: bold;
 	font-size:20px;
->>>>>>> 0c40104e47357395e18aa8563a587e7f73b4e3c5
 	margin-right:40px;
 	margin-top:40px;
 	margin-bottom: 100px;
@@ -112,24 +92,8 @@ h1
   background-color:#4B77BE;
  }
  
-<<<<<<< HEAD
- 
- 
  /*Timetable*/
  
-=======
- /*Timetable*/
- #homeBtn{	background-color:#6496c8;
-	color:#fff;
-	text-shadow: -2px 2px #346392;
-	font-weight: bold;
-	font-size:20px;
-	margin-right:40px;
-	margin-top:40px;
-	margin-bottom: 100px;
-
- }
->>>>>>> 0c40104e47357395e18aa8563a587e7f73b4e3c5
  .timetable
 {
 	box-sizing:border-box
@@ -371,10 +335,6 @@ h1
 	background-color:#2EC78F
 	
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c40104e47357395e18aa8563a587e7f73b4e3c5
 
 /*personalised timetable*/
 #timetable{

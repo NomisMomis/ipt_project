@@ -1,0 +1,134 @@
+ 
+ <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Vanilla javascript plugin for building nice responsive timetables">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timetable.js demo</title>
+             <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="styles/timetablejs.css">
+    <link rel="stylesheet" href="styles/demo.css">
+  </head>
+  <body>
+
+
+    <div id=img>
+    <img src="TimetableLogo.png"/>
+    </div>
+	
+	<button type="button" id="randomiser"> Random show generator </button>
+	<button type="button" id="PersonalisedTT"><a href="../../timetable.html">Personalised Timetable</a> </button>
+	
+	
+	
+
+	
+    <div class="timetable"></div>
+    
+    <script src="scripts/timetable.min.js"></script>
+
+    <script>
+     
+      var timetable = new Timetable();
+
+      timetable.setScope(00,00)
+
+      timetable.addLocations(['RTE1', 'RTE2', 'BBC1']);
+
+	  //Saturday 
+	  timetable.addEvent('The Marrying Man', 'RTE1', new Date(2015,7,17,00,00), new Date(2015,7,17,02,05), '#');
+	  timetable.addEvent('The Good Wife', 'RTE1', new Date(2015,7,17,02,05), new Date(2015,7,17,02,50), '#');
+	  timetable.addEvent('Nationwide', 'RTE1', new Date(2015,7,17,02,50), new Date(2015,7,17,03,25), '#');
+	  timetable.addEvent('Shortland Street', 'RTE1', new Date(2015,7,17,03,25), new Date(2015,7,17,03,50), '#');
+	  timetable.addEvent('Dr Phil', 'RTE1', new Date(2015,7,17,03,50), new Date(2015,7,17,04,35), '#');
+	  timetable.addEvent('Euro News', 'RTE1', new Date(2015,7,17,04,35), new Date(2015,7,17,06,00), '#');
+	  timetable.addEvent('Teleshopping', 'RTE1', new Date(2015,7,17,06,00), new Date(2015,7,17,07,40), '#');
+	  timetable.addEvent('Shopping From Home', 'RTE1', new Date(2015,7,17,07,40), new Date(2015,7,17,08,15), '#');
+	  timetable.addEvent('Home Improvment', 'RTE1', new Date(2015,7,17,08,15), new Date(2015,7,17,09,10), '#');
+	  timetable.addEvent('Nationwide', 'RTE1', new Date(2015,7,17,09,10), new Date(2015,7,17,09,45), '#');
+	  timetable.addEvent('MasterChef', 'RTE1', new Date(2015,7,17,09,45), new Date(2015,7,17,10,55), '#');
+	  timetable.addEvent('Bills Food', 'RTE1', new Date(2015,7,17,10,55), new Date(2015,7,17,11,30), '#');
+	  timetable.addEvent('Catherines Kitchen', 'RTE1', new Date(2015,7,17,11,30), new Date(2015,7,17,12,00), '#');
+	  timetable.addEvent('Father Brown', 'RTE1', new Date(2015,7,17,12,00), new Date(2015,7,17,13,05), '#');
+	  timetable.addEvent('Natural World', 'RTE1', new Date(2015,7,17,13,05), new Date(2015,7,17,14,00), '#');
+	  timetable.addEvent('Blackadder', 'RTE1', new Date(2015,7,17,14,00), new Date(2015,7,17,14,35), '#');
+	  timetable.addEvent('Only Fools and Horses', 'RTE1', new Date(2015,7,17,14,35), new Date(2015,7,17,15,10), '#');
+	  timetable.addEvent('Room To Improve', 'RTE1', new Date(2015,7,17,15,10), new Date(2015,7,17,16,15), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,16,15), new Date(2015,7,17,16,25), '#');
+	  timetable.addEvent('The Voice Of Ireland', 'RTE1', new Date(2015,7,17,16,25), new Date(2015,7,17,18,01), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,18,01), new Date(2015,7,17,18,35), '#');
+	  timetable.addEvent('Turbo', 'RTE1', new Date(2015,7,17,18,35), new Date(2015,7,17,20,20), '#');
+	  timetable.addEvent('Winning Streak', 'RTE1', new Date(2015,7,17,20,20), new Date(2015,7,17,21,20), '#');
+	  timetable.addEvent('News', 'RTE1', new Date(2015,7,17,21,20), new Date(2015,7,17,21,50), '#');
+	  timetable.addEvent('The Ray Darcy Show', 'RTE1', new Date(2015,7,17,21,50), new Date(2015,7,17,23,10), '#');
+	  timetable.addEvent('Extreme Measures', 'RTE1', new Date(2015,7,17,23,10), new Date(2015,7,17,24,00), '#');
+	  
+	  timetable.addEvent('CSI Cyber', 'RTE2', new Date(2015,7,17,00,00), new Date(2015,7,17,00,40), '#');
+	  timetable.addEvent('FeardotCom', 'RTE2', new Date(2015,7,17,00,40), new Date(2015,7,17,02,25), '#');
+	  timetable.addEvent('Benched', 'RTE2', new Date(2015,7,17,02,25), new Date(2015,7,17,03,10), '#');
+	  timetable.addEvent('EuroNews', 'RTE2', new Date(2015,7,17,03,10), new Date(2015,7,17,04,30), '#');
+	  timetable.addEvent('Teleshopping', 'RTE2', new Date(2015,7,17,04,30), new Date(2015,7,17,05,00), '#');
+	  timetable.addEvent('EuroNews', 'RTE2', new Date(2015,7,17,05,00), new Date(2015,7,17,08,00), '#');
+	  timetable.addEvent('The Animals Of Farthing Woods', 'RTE2', new Date(2015,7,17,08,00), new Date(2015,7,17,08,25), '#');
+	  timetable.addEvent('Tom and Jerry', 'RTE2', new Date(2015,7,17,08,25), new Date(2015,7,17,09,10), '#');
+	  timetable.addEvent('Club Disney', 'RTE2', new Date(2015,7,17,09,10), new Date(2015,7,17,10,30), '#');
+	  timetable.addEvent('SwipeTV', 'RTE2', new Date(2015,7,17,10,30), new Date(2015,7,17,11,00), '#');
+	  timetable.addEvent('Home and Away', 'RTE2', new Date(2015,7,17,11,00), new Date(2015,7,17,11,30), '#');
+	  timetable.addEvent('Home and Away', 'RTE2', new Date(2015,7,17,11,30), new Date(2015,7,17,12,00), '#');
+	  timetable.addEvent('Champions League Magazine', 'RTE2', new Date(2015,7,17,12,00), new Date(2015,7,17,12,30), '#');
+	  timetable.addEvent('RBS Six Nations', 'RTE2', new Date(2015,7,17,12,30), new Date(2015,7,17,18,30), '#');
+	  timetable.addEvent('GoldFinger', 'RTE2', new Date(2015,7,17,18,30), new Date(2015,7,17,20,35), '#');
+	  timetable.addEvent('The Simpsons', 'RTE2', new Date(2015,7,17,20,35), new Date(2015,7,17,21,00), '#');
+	  timetable.addEvent('The Hangover II', 'RTE2', new Date(2015,7,17,21,00), new Date(2015,7,17,22,55), '#');
+	  timetable.addEvent('The Choice Music Prize', 'RTE2', new Date(2015,7,17,22,55), new Date(2015,7,17,24,00), '#');
+	  
+	  timetable.addEvent('Celebrity Apprentice USA', 'BBC1', new Date(2015,7,17,00,00), new Date(2015,7,17,02,30), '#');
+	  timetable.addEvent('BBC News', 'BBC1', new Date(2015,7,17,02,30), new Date(2015,7,17,06,00), '#');
+	  timetable.addEvent('Breakfeast', 'BBC1', new Date(2015,7,17,06,00), new Date(2015,7,17,10,00), '#');
+	  timetable.addEvent('Saturday Kitchen Live', 'BBC1', new Date(2015,7,17,10,00), new Date(2015,7,17,11,30), '#');
+	  timetable.addEvent('Foolproof Cooking', 'BBC1', new Date(2015,7,17,11,30), new Date(2015,7,17,12,00), '#');
+	  timetable.addEvent('BBC News', 'BBC1', new Date(2015,7,17,12,00), new Date(2015,7,17,12,10), '#');
+	  timetable.addEvent('Football Focus', 'BBC1', new Date(2015,7,17,12,10), new Date(2015,7,17,13,00), '#');
+	  timetable.addEvent('Bargain Hunt', 'BBC1', new Date(2015,7,17,13,00), new Date(2015,7,17,14,00), '#');
+	  timetable.addEvent('Homes Under The Hammer', 'BBC1', new Date(2015,7,17,14,00), new Date(2015,7,17,15,00), '#');
+	  timetable.addEvent('Flog It!', 'BBC1', new Date(2015,7,17,15,00), new Date(2015,7,17,15,45), '#');
+	  timetable.addEvent('Escape To The Country', 'BBC1', new Date(2015,7,17,15,45), new Date(2015,7,17,16,30), '#');
+	  timetable.addEvent('Final Score', 'BBC1', new Date(2015,7,17,16,30), new Date(2015,7,17,17,00), '#');
+	  timetable.addEvent('BBC News', 'BBC1', new Date(2015,7,17,17,00), new Date(2015,7,17,17,20), '#');
+	  timetable.addEvent('MOTD Live Everton V Chelsea', 'BBC1', new Date(2015,7,17,17,20), new Date(2015,7,17,19,30), '#');
+	  timetable.addEvent('The Voice UK', 'BBC1', new Date(2015,7,17,19,30), new Date(2015,7,17,20,45), '#');
+	  timetable.addEvent('Lottery', 'BBC1', new Date(2015,7,17,20,45), new Date(2015,7,17,21,35), '#');
+	  timetable.addEvent('Casualty', 'BBC1', new Date(2015,7,17,21,35), new Date(2015,7,17,22,25), '#');
+	  timetable.addEvent('BBC News', 'BBC1', new Date(2015,7,17,22,25), new Date(2015,7,17,22,45), '#');
+	  timetable.addEvent('Match Of The Day', 'BBC1', new Date(2015,7,17,22,45), new Date(2015,7,17,23,30), '#');
+	  timetable.addEvent('The Ring', 'BBC1', new Date(2015,7,17,23,30), new Date(2015,7,17,24,00), '#');
+	  
+	  var renderer = new Timetable.Renderer(timetable);
+      
+      renderer.draw('.timetable');
+    </script>
+
+    <button type="button" id="Friday"> Friday </button>
+	<button type="button" id="Saturday"> Saturday </button>
+	<br>
+		<div id="personal"></div>
+		
+	<script type="text/javascript">
+    document.getElementById("Friday").onclick = function () {
+        location.href = "demo.html";
+    };
+    
+    
+  //     $(document).ready(function(){
+    //  $("#PersonalisedTT").click(function(){
+      //    $("#personal").load("../../timetable.html")
+     // })  
+        
+   // });
+</script>
+</body>
+</html>
+
+     
