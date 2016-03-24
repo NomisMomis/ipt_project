@@ -15,8 +15,7 @@
       drop: function( event, ui ) {
         $( this )
           
-          .find( "p" )
-            .html( "Full" );
+          
             $(this).draggable('disable');
       }
     });
@@ -116,7 +115,13 @@
    
  </div>
  
-
+     <button>Clear Timetable</button>
+    
+    <script>
+        $("button").click(function(){
+            $(".draggable").remove();
+        });
+    </script>
 
 </body>
 </html>
