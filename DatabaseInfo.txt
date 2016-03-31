@@ -1,0 +1,9 @@
+You can log in at: https://useraccounts-andremac96.c9users.io/phpmyadmin with the following username (and blank password):
+
+USERNAME: Andremac96
+PASSWORD: "BLANK"
+
+TESTER ACCOUNT CREDENTIALS
+
+Email: Test@gmail.com
+Password: 123456*a
