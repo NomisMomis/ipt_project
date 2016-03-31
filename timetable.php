@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    include_once 'dbconnect.php';
+    
+    if(!isset($_SESSION['user']))
+    {
+     header("Location: index.php");
+    }
+    $res=mysql_query("SELECT * FROM users WHERE user_id=".$_SESSION['user']);
+    $userRow=mysql_fetch_array($res);
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +19,7 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
-  <link rel="stylesheet" href = "style.css">
+  <link rel="stylesheet" href = "CSS/style.css">
   <script>
   $(function() {
     $( ".draggable" ).draggable();
