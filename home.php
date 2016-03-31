@@ -63,17 +63,10 @@ $userRow=mysql_fetch_array($res);
           renderer.draw('.timetable');
     </script>
 
-          <button type="button" id="Friday"> Friday </button>
-          <button type="button" id="Saturday"> Saturday </button><br>
+          
 	  
 	    <div id="personal"></div>
 	
-		    <script type="text/javascript">
-                document.getElementById("Saturday").onclick = function ()
-                {
-                    location.href = "day2.html";
-                };
-  
-            </script>
+		    
 </body>
 </html>
